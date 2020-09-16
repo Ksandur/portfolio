@@ -176,21 +176,23 @@ ul li ul li {
 
 @media only screen and (max-width: 1024px) {
     .indexleft, .indexright{
-        position: fixed;
         left: 0;
         right: 0;
         height: 50%;
     }
-    .indexleft {
+    .indexleft{
         top: 0;
     }
     .indexright{
         bottom: 0;
     }
-    .indexsplit {
+    .indexright h2, h3, p{
+        color: white;
+    }
+    .indexsplit{
         width: 100%;
     }
-    .indexlimage img {
+    .indexlimage img{
         width: 40vw;
         border-radius: 50%;
         cursor: default;
@@ -219,6 +221,7 @@ ul li ul li {
         cursor: pointer;
     }
     .projectheading h2{
+        margin-top: -50vw;
         font-size: 10vw;
     }
 
@@ -229,24 +232,24 @@ ul li ul li {
         opacity: 0.8;
     }
     .indexprojects h3{
-        margin-top: 1vw;
-        font-size: 4vw;
+        visibility: hidden;
     }
 
     .indexprojects p{
-        margin-top: 0.4vw;
-        font-size: 3vw;
-        opacity: 0.8;
+        visibility: hidden;
     }
 
     .indexprojects a{
-        font-size: 0.7vw;
+        margin-top: 40vw;
+        font-size: 4vw;
         text-decoration: none;
         color: #b8e8ff;
-    }
-
-    .indexprojects a{
         transition: 0.5s;
+    }
+    
+    .indexprojects img{
+        visibility: hidden;
+        height: 0vw;
     }
 
 .   indexprojects a:hover{
