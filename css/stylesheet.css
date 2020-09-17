@@ -92,6 +92,7 @@ ul li ul li {
 
 .indexleft h3{
     font-size: 1vw;
+    margin-bottom: 2.2vw;
 }
 
 .indexleft p{
@@ -114,9 +115,14 @@ ul li ul li {
 }
 
 .indexlimage img {
-    width: 19vw;
-    border-radius: 50%;
+    width: 18vw;
+    border-radius: 2%;
     cursor: default;
+}
+
+.indexlimage img:hover{
+    box-shadow: 2px 2px 4px #000000;
+    transition: 0.5s;
 }
 
 .indexprojects img{
@@ -124,6 +130,11 @@ ul li ul li {
     border-radius: 2%;
     transition: 0.5s;
     cursor: pointer;
+}
+
+.indexprojects img:hover{
+    box-shadow: 2px 2px 4px #000000;
+    transition: 0.5s;
 }
 
 .projectheading h2{
