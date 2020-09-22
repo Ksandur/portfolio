@@ -1,25 +1,60 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="nl">
     <head>
         <meta charset="utf-8">
+        <meta name="keywords" content="Xander, media, xandermedia, animation, portfolio, webdesign, scripting, design, freelancer, videographer, video, editor">
+        <meta name="description" content="Het portfolio van Xander Lemmens op broekzakformaat>">  
         <meta name="author" content="Xander Lemmens">
         <meta name="viewport" content="device-width, initial-scale=1.0">
         <title>Vrij Werk | pf.xander.media</title>
         <link rel="stylesheet" type="text/css" href="../css/stylesheet.css">
+        <link rel="stylesheet" type="text/css" href="../css/ae-st-min.css">
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet">
     </head>
     <body>
         <div id="container">
+    <!--Navigatie-->
             <nav>
-                <a href="../index.html">Home</a>
-                <a href="animatie.html">Animatie</a>
-                <a href="beeld.html">Beeld &amp; Geluid</a>
-                <a href="grafische.html">Grafische Vormgeving</a>
-                <a href="webdesign.html">Internettechnieken</a>
-                <a href="scripten.html">Scripten</a>
-                <a href="vrijwerk.html">Vrij Werk</a>
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="#" class="active">Vrij Werk</a>
+                        <ul class="dropdown">
+                            <li><a href="animatie.html">Animatie</a></li>
+                            <li><a href="beeld.html">Beeld &amp; Geluid</a></li>
+                            <li><a href="grafische.html">Grafische Vormgeving</a></li>
+                            <li><a href="webdesign.html">Internettechnieken</a></li>
+                            <li><a href="scripten.html">Scripten</a></li>
+                            <li><a href="vrijwerk.html" class="active">Vrij Werk</a></li>
+                        </ul>    
+                    </li>
+                </ul>
             </nav>
+    <!--Content-->
             <main>
+                <div class="animatiewrapper">
+                    <div class="animatiecontent">
+                    </div>
+                </div>
             </main>
         </div>
     </body>
+    <style>
+        body {
+            background-color: rgba(0,0,0,0.6);
+            background-image: url("../img/bgbg.jpg");
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .animatiewrapper {
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            left: 0;
+            top: 0;
+            z-index: 10;
+            background-color: rgba(0,0,0,0.4);
+        }
+    </style>
 </html>

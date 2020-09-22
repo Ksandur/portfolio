@@ -112,6 +112,7 @@ ul li ul li {
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
+    padding: 0.5vw;
 }
 
 .indexlimage img {
@@ -133,7 +134,7 @@ ul li ul li {
 }
 
 .indexprojects img:hover{
-    box-shadow: 2px 2px 4px #000000;
+    box-shadow: 4px 4px 8px #000000;
     transition: 0.5s;
 }
 
@@ -185,7 +186,7 @@ ul li ul li {
     letter-spacing: 0.1em;
 }
 
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 600px) {
     .indexleft, .indexright{
         left: 0;
         right: 0;
