@@ -1,10 +1,12 @@
-
-
+/* The following CSS file was made by Xander Lemmens */
+/* This CSS file is open-source and should never be sold for any amount of currency. */
+/* more on www.github.com/Ksandur */
 body {
+    margin: 0;
     font-family: 'Raleway', sans-serif;
 }
 
-
+/*Navigation Bar*/
 ul {
     list-style-type: none;
     margin: 0;
@@ -14,7 +16,7 @@ ul {
     position: fixed;
     top: 0;
     width: 100%;
-    z-index: 998;
+    z-index: 420;
 }
 
 ul:hover{
@@ -27,7 +29,7 @@ li {
 
 li a {
     display: inline-block;
-    color: grey;
+    color: #808080;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
@@ -35,15 +37,15 @@ li a {
 }
 
 li a:hover {
-    color: white;
+    color: #FFFFFF;
 }
 
 .active {
-    color: white;
+    color: #FFFFFF;
 }
 
 .active:hover {
-    color: white;
+    color: #FFFFFF;
 }
 
 ul li ul {
@@ -70,14 +72,23 @@ ul li ul li {
     width: 100%;
 }
 
-
-/* Splitsing */
+/* Site split */
 .indexsplit {
     height: 100%;
     width: 50%;
     position: absolute;
 }
 
+.indexcentered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    padding: 0.5vw;
+}
+
+/* Left Side */
 .indexleft {
     left: 0;
 }
@@ -97,21 +108,6 @@ ul li ul li {
     font-size: 0.8vw;
 }
 
-.indexright {
-    background-color: rgba(0, 0, 0, 0.35);
-    right: 0;
-    color: white;
-}
-
-.indexcentered {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    padding: 0.5vw;
-}
-
 .indexlimage img {
     width: 18vw;
     border-radius: 2%;
@@ -121,6 +117,13 @@ ul li ul li {
 .indexlimage img:hover{
     box-shadow: 2px 2px 4px #000000;
     transition: 0.5s;
+}
+
+/* Right Side*/
+.indexright {
+    background-color: rgba(0, 0, 0, 0.35);
+    right: 0;
+    color: #FFFFFF;
 }
 
 .indexprojects img{
@@ -172,17 +175,29 @@ ul li ul li {
     transition: 0.5s;
 }
 
+/* Animatie page */
 .animatiecontent{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     text-align: center;
-    font-size: 10vw;
-    color: white;
-    letter-spacing: 0.1em;
+    color: #FFFFFF;
 }
 
+.animatiecontent h2{
+    font-family: 'Peddana', serif;
+    font-style: normal;
+    color: #ffffff;
+}
+
+.animatiecontent video{
+    width: 30vw;
+    height: 15vw;
+}
+
+table.center{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Mobile View */
 @media only screen and (max-width: 600px) {
     .indexleft, .indexright{
         left: 0;
@@ -196,7 +211,7 @@ ul li ul li {
         bottom: 0;
     }
     .indexright h2, h3, p{
-        color: white;
+        color: #FFFFFF;
     }
     .indexsplit{
         width: 100%;
@@ -265,4 +280,6 @@ ul li ul li {
         letter-spacing: 0.1vw;
         transition: 0.5s;
     }
+    
+    
 }
