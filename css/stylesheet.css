@@ -6,13 +6,13 @@
     is strictly prohibited.
     These files are not for commercial usage.
 */
-body {
+body{
     margin: 0;
     font-family: 'Raleway', sans-serif;
 }
 
 /*Navigation Bar*/
-ul {
+ul{
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -28,11 +28,11 @@ ul:hover{
     opacity: 1;
 }
 
-li {
+li{
     display: inline-block;
 }
 
-li a {
+li a{
     display: inline-block;
     color: #808080;
     text-align: center;
@@ -41,19 +41,19 @@ li a {
     transition 0.5s;
 }
 
-li a:hover {
+li a:hover{
     color: #FFFFFF;
 }
 
-.active {
+.active{
     color: #FFFFFF;
 }
 
-.active:hover {
+.active:hover{
     color: #FFFFFF;
 }
 
-ul li ul {
+ul li ul{
     background: #111;
     visibility: hidden;
     opacity: 0;
@@ -66,25 +66,25 @@ ul li ul {
 }
 
 ul li:hover > ul,
-ul li ul:hover {
+ul li ul:hover{
     visibility: visible;
     opacity: 1;
     display: block;
 }
 
-ul li ul li {
+ul li ul li{
     clear: both;
     width: 100%;
 }
 
 /* Site split */
-.indexsplit {
+.indexsplit{
     height: 100%;
     width: 50%;
     position: absolute;
 }
 
-.indexcentered {
+.indexcentered{
     position: absolute;
     top: 50%;
     left: 50%;
@@ -94,7 +94,7 @@ ul li ul li {
 }
 
 /* Left Side */
-.indexleft {
+.indexleft{
     left: 0;
 }
 
@@ -113,7 +113,7 @@ ul li ul li {
     font-size: 0.8vw;
 }
 
-.indexlimage img {
+.indexlimage img{
     width: 18vw;
     border-radius: 2%;
     cursor: default;
@@ -125,7 +125,7 @@ ul li ul li {
 }
 
 /* Right Side*/
-.indexright {
+.indexright{
     background-color: rgba(0, 0, 0, 0.35);
     right: 0;
     color: #FFFFFF;
@@ -186,14 +186,13 @@ ul li ul li {
     color: #FFFFFF;
 }
 
-.animatiecontent h2{
-    font-family: 'Peddana', serif;
+.animatiecontent p {
     font-style: normal;
     color: #ffffff;
 }
 
 .animatiecontent video{
-    width: 30vw;
+    width: 26vw;
     height: 15vw;
 }
 
@@ -203,7 +202,7 @@ table.center{
 }
 
 /* Mobile View */
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 600px){
     .indexleft, .indexright{
         left: 0;
         right: 0;
