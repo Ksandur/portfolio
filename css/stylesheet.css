@@ -201,6 +201,22 @@ table.center{
     margin-right: auto;
 }
 
+.slidesection{
+    position: relative;
+    margin-top: -6%;
+    width: 100%;
+    height: 100vh;
+}
+
+.slidesection video{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 110%;
+    object-fit: cover;
+}
+
 /* Mobile View */
 @media only screen and (max-width: 600px){
     .indexleft, .indexright{

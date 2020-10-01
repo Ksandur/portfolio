@@ -45,65 +45,11 @@
         <main>
             <div class="container">
                 <div class="animatiecontent">
-                    <table class="center">
-                        <tr>
-                            <th colspan="3">
-                                <h1><br>Animatie</h1>
-                            </th>
-                        </tr>
-                        <tr>
-                            <th>
-                                <p>Intro Chinoismedia</p>
-                                <video controls poster="../img/thumbnail.jpg">
-                                    <source src="../vid/chinoismedia.mp4" type="video/mp4">
-                                    <source src="../vid/chinoismedia.ogg" type="video/ogg">
-                                    Your browser does not support the video tag.
-                                </video>
-                            </th>
-                            <th>
-                                <p>Placeholder</p>
-                                <video controls poster="../img/thumbnail.jpg">
-                                    <source src="../vid/chinoismedia.mp4" type="video/mp4">
-                                    <source src="../vid/chinoismedia.ogg" type="video/ogg">
-                                    Your browser does not support the video tag.
-                                </video>
-                            </th>
-                            <th>
-                                <p>Placeholder</p>
-                                <video controls poster="../img/thumbnail.jpg">
-                                    <source src="../vid/chinoismedia.mp4" type="video/mp4">
-                                    <source src="../vid/chinoismedia.ogg" type="video/ogg">
-                                    Your browser does not support the video tag.
-                                </video>
-                            </th>
-                        </tr>
-                        <tr>
-                            <th>
-                                <p>Placeholder</p>
-                                <video controls poster="../img/thumbnail.jpg">
-                                    <source src="../vid/chinoismedia.mp4" type="video/mp4">
-                                    <source src="../vid/chinoismedia.ogg" type="video/ogg">
-                                    Your browser does not support the video tag.
-                                </video>
-                            </th>
-                            <th>
-                                <p>Placeholder</p>
-                                <video controls poster="../img/thumbnail.jpg">
-                                    <source src="../vid/chinoismedia.mp4" type="video/mp4">
-                                    <source src="../vid/chinoismedia.ogg" type="video/ogg">
-                                    Your browser does not support the video tag.
-                                </video>
-                            </th>
-                            <th>
-                                <p>Placeholder</p>
-                                <video controls poster="../img/thumbnail.jpg">
-                                    <source src="../vid/chinoismedia.mp4" type="video/mp4">
-                                    <source src="../vid/chinoismedia.ogg" type="video/ogg">
-                                    Your browser does not support the video tag.
-                                </video>
-                            </th>
-                        </tr>
-                    </table>
+                    <div class="slidesection">
+                        <video id="slider" autoplay muted loop>
+                            <source src="../vid/chinoismedia.mp4">
+                        </video>
+                    </div>
                 </div>
             </div>
         </main>
@@ -112,7 +58,7 @@
 <style>
     body {
         background-color: rgba(0, 0, 0, 0.6);
-        background-image: url("../img/bgbg.jpg");
+        background-image: url("../img/aebg.jpg");
         background-attachment: fixed;
         background-position: center;
         background-repeat: no-repeat;
@@ -129,5 +75,8 @@
         background-color: rgba(0, 0, 0, 0.4);
     }
 </style>
+<script>
+    var source = document.getElementById('source');
+</script>
 
 </html>
