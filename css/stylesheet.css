@@ -205,21 +205,26 @@ table.center{
 }
 
 .content h1{
+    font-size: 4vw;
     margin-bottom: -0.1vw;
+}
+
+.content p{
+    font-size: 2vw;
 }
 
 .content {
     z-index:1;
     position: absolute;
-    top: 40%;
-    left: 40%;
+    top: 35%;
+    left: 12.5%;
     text-align: center;
     color: white;
 }
 
 button {
     border: 0.1vw;
-    border-radius: 5%;
+    border-radius: 0.5vw;
     border-style: solid;
     border-color: white;
     color: white;
@@ -228,30 +233,35 @@ button {
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
+    font-size: 2vw;
+    margin: 2vw 2vw;
     cursor: pointer;
     transition: 0.5s;
 }
 
 button:hover {
-    color: black;
+    color: rgba(0,0,0,0.6);
     background-color: rgba(255,255,255,0.6);
     transition: 0.5s;
 }
 
 /* Mobile View */
-@media only screen and (max-width: 600px){
+@media only screen and (max-width: 1200px){
     .indexleft, .indexright{
         left: 0;
         right: 0;
         height: 50%;
     }
     .indexleft{
-        top: 0;
+        top: 10%;
+    }
+    .indexlimage img{
+        z-index: 100;
     }
     .indexright{
+        top: 50%;
         bottom: 0;
+        z-index: 0;
     }
     .indexright h2, h3, p{
         color: #FFFFFF;
@@ -324,5 +334,23 @@ button:hover {
         transition: 0.5s;
     }
     
+    .content h1{
+        font-size: 15vw;
+    }
     
+    .content p{
+        font-size: 5vw;
+    }
+    
+    .content{
+        z-index:1;
+        position: absolute;
+        top: 40%;
+        left: 0;
+        text-align: center;
+        color: white;
+    }
+    button{
+        font-size: 6vw;
+    }
 }
