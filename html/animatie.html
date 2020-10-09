@@ -45,39 +45,91 @@
         <main>
             <div class="container">
                 <div class="content">
-                    <h1>Animatie</h1> 
-                    <p>Hallo daar, als ik de inspiratie heb zal ik hier een interessant tekstje neerzetten.</p>
-                    <button type="button" id="myBtn">Meer info</button>
+                    <h1>Animatie</h1>
                 </div>
-                <div class="animatiecontent">
-                    <div class="slidesection">
-                        <video id="slider" autoplay muted loop>
-                            <source src="../vid/animatiebg.mp4">
-                        </video>
+                <div class="slidesection">
+                    <video id="slider" autoplay muted loop>
+                        <source src="../vid/animatiebg.mp4">
+                    </video>
+                </div>
+                <div class="showcase">
+                    <div class="titlearea">
+                        <h1>Mijn werk</h1>
+                        <p>Hier zal zelfs nog meer interessante info komen!</p>
+                    </div>
+                    <table class="center">
+                        <tr>
+                            <th>
+                                <a>
+                                    <img src="../img/Animatie_opdr2.gif" alt="opdracht twee     animatie">
+                                </a>
+                                <p>Opdracht "Knipoog"</p>
+                            </th>
+                            <th>
+                                <a>
+                                    <img src="../img/Animatie_opdr3.gif" alt="opdracht drie  animatie">
+                                </a>
+                                <p>Opdracht "Auto"</p>
+                            </th>
+                        </tr>
+                    </table>
+                    <table class="center">
+                        <tr>
+                            <th>
+                                <a>
+                                    <img src="../img/Animatie_opdr2.gif" alt="opdracht twee     animatie">
+                                </a>
+                                <p>Opdracht "Knipoog"</p>
+                            </th>
+                            <th>
+                                <a>
+                                    <img src="../img/Animatie_opdr3.gif" alt="opdracht drie  animatie">
+                                </a>
+                                <p>Opdracht "Auto"</p>
+                            </th>
+                        </tr>
+                    </table>
+                </div>
+                <div class="aboutanimatie">
+                    <h1>Wat is animatie?</h1>
+                    <table class="center">
+                        <tr>
+                            <th>
+                                <video autoplay muted loop>
+                                    <source src="../vid/animatiebg.mp4">
+                                </video>
+                            </th>
+                            <th class="leftth">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,<br> sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<br> Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi <br> ut aliquip ex ea commodo consequat.<br>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum <br> dolore eu fugiat nulla pariatur.<br> Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt<br> mollit anim id est laborum.</p>
+                            </th>
+                        </tr>
+                        <tr>
+                            <th class="rightth">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,<br> sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<br> Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi <br> ut aliquip ex ea commodo consequat.<br>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum <br> dolore eu fugiat nulla pariatur.<br> Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt<br> mollit anim id est laborum.</p>
+                            </th>
+                            <th>
+                                <video autoplay muted loop>
+                                    <source src="../vid/chinoismedia.mp4">
+                                </video>
+                            </th>
+                        </tr>
+                    </table>
+                </div>
+                <footer>
+                    <table class="center">
+                        <tr>
+                            <th class="leftth">
+                                <h1>&copy; Xander Lemmens 2020</h1>
+                            </th>
+                        </tr>
+                    </table>
+                </footer>
+                <div id="myModal" class="modal">
+                    <div class="modal-content">
+                        <span class="close">&times;</span>
+                        <h1>Mijn werk</h1>
                     </div>
                 </div>
-                    <div id="myModal" class="modal">
-                        <div class="modal-content">
-                            <span class="close">&times;</span>
-                            <h1>Mijn werk</h1>
-                            <table class="center">
-                            <tr>
-                                <th>
-                                    <a href="../img/Animatie_opdr2.gif" target="_blank">
-                                        <img src="../img/Animatie_opdr2.gif" alt="opdracht twee     animatie">
-                                    </a>
-                                    <p>Opdracht "Knipoog"</p>
-                                </th>
-                                <th>                           
-                                    <a href="../img/Animatie_opdr3.gif" target="_blank">
-                                        <img src="../img/Animatie_opdr3.gif" alt="opdracht drie  animatie">
-                                    </a>
-                                    <p>Opdracht "Auto"</p>
-                                </th>
-                            </tr>
-                        </table>
-                    </div>
-                </div> 
             </div>
         </main>
     </div>
@@ -101,27 +153,37 @@
         z-index: 10;
         background-color: rgba(0, 0, 0, 0.4);
     }
-
+    .content{
+        top: 13%;
+        left: 41.5%;
+    }
+    .slidesection{
+        position: relative;
+        margin-top: -6%;
+        width: 100%;
+        height: 50vh;
+    }
 </style>
 <script>
-var modal = document.getElementById("myModal");
+    var modal = document.getElementById("myModal");
 
-var btn = document.getElementById("myBtn");
+    var btn = document.getElementById("myBtn");
 
     var span = document.getElementsByClassName("close")[0];
 
     btn.onclick = function() {
-    modal.style.display = "block";
+        modal.style.display = "block";
     }
 
-        span.onclick = function() {
+    span.onclick = function() {
         modal.style.display = "none";
-        }
+    }
 
-        window.onclick = function(event) {
+    window.onclick = function(event) {
         if (event.target == modal) {
-        modal.style.display = "none";
+            modal.style.display = "none";
         }
-        }
+    }
 </script>
+
 </html>

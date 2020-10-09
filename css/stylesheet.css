@@ -6,6 +6,10 @@
     is strictly prohibited.
     These files are not for commercial usage.
 */
+html{
+    scroll-behavior: smooth;
+}
+
 body{
     margin: 0;
     font-family: 'Raleway', sans-serif;
@@ -77,109 +81,6 @@ ul li ul li{
     width: 100%;
 }
 
-/* Site split */
-.indexsplit{
-    height: 100%;
-    width: 50%;
-    position: absolute;
-}
-
-.indexcentered{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    padding: 0.5vw;
-}
-
-/* Left Side */
-.indexleft{
-    left: 0;
-}
-
-.indexleft h1{
-    font-size: 2.5vw;
-    font-family: 'Source Code Pro', monospace;
-}
-
-.indexleft h3{
-    font-size: 1vw;
-    margin-bottom: 2.2vw;
-}
-
-.indexleft p{
-    margin-top: 1vw;
-    font-size: 0.8vw;
-}
-
-.indexlimage img{
-    width: 18vw;
-    border-radius: 2%;
-    cursor: default;
-}
-
-.indexlimage img:hover{
-    box-shadow: 2px 2px 4px #000000;
-    transition: 0.5s;
-}
-
-/* Right Side*/
-.indexright{
-    background-color: rgba(0, 0, 0, 0.35);
-    right: 0;
-    color: #FFFFFF;
-}
-
-.indexprojects img{
-    width: 18vw;
-    border-radius: 2%;
-    transition: 0.5s;
-    cursor: pointer;
-}
-
-.indexprojects img:hover{
-    box-shadow: 4px 4px 8px #000000;
-    transition: 0.5s;
-}
-
-.projectheading h2{
-    font-size: 2vw;
-}
-
-.projectheading p{
-    margin-top: -0.4vw;
-    margin-bottom: 2.2vw;
-    font-size: 1vw;
-    opacity: 0.8;
-}
-
-.indexprojects h3{
-    margin-top: 1vw;
-    font-size: 1vw;
-}
-
-.indexprojects p{
-    margin-top: 0.4vw;
-    font-size: 0.8vw;
-    opacity: 0.8;
-}
-
-.indexprojects a{
-    font-size: 0.7vw;
-    text-decoration: none;
-    color: #b8e8ff;
-}
-
-.indexprojects a{
-    transition: 0.5s;
-}
-
-.indexprojects a:hover{
-    letter-spacing: 0.1vw;
-    transition: 0.5s;
-}
-
 /* Animatie page */
 .modal {
     transition: 0.5s;
@@ -228,12 +129,6 @@ ul li ul li{
     width: 25vw;
 }
 
-.modal img:hover{
-    box-shadow: 2px 2px 4px #000000;
-    transition: 0.5s;
-    width: 25.1vw;
-}
-
 table.center{
     margin-left: auto;
     margin-right: auto;
@@ -248,12 +143,12 @@ table.center{
 
 .slidesection video{
     position: fixed;
-    top: 0;
     left: 0;
     bottom: 0;
     width: 100%;
     height: 110%;
     object-fit: cover;
+    z-index: -100;
 }
 
 .content h1{
@@ -268,13 +163,13 @@ table.center{
 .content {
     z-index:1;
     position: absolute;
-    top: 35%;
-    left: 12.5%;
+    top: 30%;
+    left: 20%;
     text-align: center;
     color: white;
 }
 
-button {
+.button {
     border: 0.1vw;
     border-radius: 0.5vw;
     border-style: solid;
@@ -286,16 +181,64 @@ button {
     text-decoration: none;
     display: inline-block;
     font-size: 2vw;
-    margin: 2vw 2vw;
+    margin: 1vw 2vw;
     cursor: pointer;
     transition: 0.5s;
 }
 
-button:hover {
+.button:hover {
     color: rgba(0,0,0,0.6);
     background-color: rgba(255,255,255,0.6);
     transition: 0.5s;
 }
+
+.showcase {
+    z-index: 690;
+    background-color: #FFFFFF;
+    color: #212121;
+    text-align: center;
+}
+
+.showcase h1 {
+    padding: 2vw;
+}
+
+.titlearea p{
+    margin-top: -1.75vw;
+    margin-bottom: 2.5vw;
+}
+
+.aboutanimatie {
+    background-color: #212121;
+    color: white;
+    text-align: center;
+    padding: 1vw;
+}
+
+.aboutanimatie video {
+    width: 25vw;
+}
+
+.leftth {
+    text-align: left;
+}
+
+.rightth {
+    text-align: right;
+}
+
+footer {
+    margin: 0;
+    padding: 0;
+}
+
+footer {
+    background-color: #f0f0f0;
+    color: #212121;
+    padding: 0.1vw;
+    font-size: 0.5vw;
+}
+
 /* Mobile View */
 @media only screen and (max-width: 1200px){
     .indexleft, .indexright{
