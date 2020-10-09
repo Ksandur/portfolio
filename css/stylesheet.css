@@ -132,6 +132,7 @@ ul li ul li{
 table.center{
     margin-left: auto;
     margin-right: auto;
+    border-spacing: 2vw;
 }
 
 .slidesection{
@@ -173,8 +174,8 @@ table.center{
     border: 0.1vw;
     border-radius: 0.5vw;
     border-style: solid;
-    border-color: white;
-    color: white;
+    border-color: #FFF;
+    color: #FFF;
     background-color: rgba(0,0,0,0);
     padding: 15px 32px;
     text-align: center;
@@ -187,8 +188,7 @@ table.center{
 }
 
 .button:hover {
-    color: rgba(0,0,0,0.6);
-    background-color: rgba(255,255,255,0.6);
+    background-color: rgba(0,0,0,0.5);
     transition: 0.5s;
 }
 
@@ -201,15 +201,15 @@ table.center{
 
 .showcase h1 {
     padding: 2vw;
+    font-size: 1.5vw;
 }
 
 .titlearea p{
-    margin-top: -1.75vw;
-    margin-bottom: 2.5vw;
+    margin-top: -2.75vw;
 }
 
 .aboutanimatie {
-    background-color: #212121;
+    background-color: #FF7F4F;
     color: white;
     text-align: center;
     padding: 1vw;
@@ -217,6 +217,15 @@ table.center{
 
 .aboutanimatie video {
     width: 25vw;
+}
+
+.aboutanimatie h1{
+    font-size: 1.5vw;
+}
+
+.aboutanimatie p{
+    font-size: 0.6vw;
+    margin-left: 5vw;
 }
 
 .leftth {
@@ -235,8 +244,28 @@ table.center{
 .footer {
     background-color: #f0f0f0;
     color: #212121;
-    padding: 0.4vw;
+    padding: 0.2vw;
     font-size: 0.5vw;
+}
+
+table img{
+    transition: 0.5s;
+    width: 20vw;
+    height: auto;
+}
+
+table img:hover{
+    transition: 0.5s;
+    width: 21vw;
+    height: auto;
+}
+
+.peach {
+    color: #FF7F4F;
+}
+
+.mildpeach{
+    color: #FFCBA4;
 }
 
 /* Mobile View */
