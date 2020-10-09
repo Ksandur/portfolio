@@ -227,15 +227,15 @@ table.center{
     text-align: right;
 }
 
-footer {
+.footer {
     margin: 0;
     padding: 0;
 }
 
-footer {
+.footer {
     background-color: #f0f0f0;
     color: #212121;
-    padding: 0.1vw;
+    padding: 0.4vw;
     font-size: 0.5vw;
 }
 
