@@ -155,10 +155,12 @@ table.center{
 .content h1{
     font-size: 4vw;
     margin-bottom: -0.1vw;
+    text-shadow: 3px 3px 14px rgba(0, 0, 0, 0.5);
 }
 
 .content p{
     font-size: 2vw;
+    text-shadow: 3px 3px 14px rgba(0, 0, 0, 0.5);
 }
 
 .content {
@@ -174,8 +176,8 @@ table.center{
     border: 0.1vw;
     border-radius: 0.5vw;
     border-style: solid;
-    border-color: #FFF;
-    color: #FFF;
+    border-color: #FF7F4F;
+    color: #FF7F4F;
     background-color: rgba(0,0,0,0);
     padding: 15px 32px;
     text-align: center;
@@ -185,6 +187,7 @@ table.center{
     margin: 1vw 2vw;
     cursor: pointer;
     transition: 0.5s;
+    box-shadow: 9px 9px 28px -6px rgba(0,0,0,0.66);
 }
 
 .button:hover {
