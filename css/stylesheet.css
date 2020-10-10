@@ -245,7 +245,7 @@ table.center{
 }
 
 .footer img {
-    width: 4vw;
+    width: 8vw;
     text-align: right;
 }
 
@@ -257,7 +257,7 @@ table.center{
     background-color: #f0f0f0;
     color: #212121;
     padding: 0.2vw;
-    font-size: 0.5vw;
+    font-size: 0.8vw;
 }
 
 .footer a {
@@ -267,6 +267,7 @@ table.center{
 
 .footer h2 {
     margin-top: -1vw;
+    font-size: 1vw;
 }
 
 .footer a:hover {
