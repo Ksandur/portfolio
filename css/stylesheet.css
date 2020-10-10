@@ -237,6 +237,7 @@ table.center{
 
 .rightth {
     text-align: right;
+    margin-right: 5vw;
 }
 
 .footer {
@@ -294,10 +295,43 @@ table img:hover {
     color: #FFCBA4;
 }
 
-iframe {
+#showcasetable iframe {
     width: 35vw;
     height: 19vw;
 }
+
+#vrijwerktable iframe{
+    width: 20vw;
+    height: 11.25vw;
+}
+
+#vrijwerktable p{
+    font-size: 0.6vw;
+    margin-left: 5vw;
+    color: #FF7F4F;
+}
+
+.aboutanimatiewhite {
+    background-color: #FFF;
+    text-align: center;
+    padding: 1vw;
+}
+
+.aboutanimatiewhite video {
+    width: 25vw;
+}
+
+.aboutanimatiewhite h1{
+    color: #FF7F4F;
+    font-size: 1.5vw;
+}
+
+.aboutanimatiewhite p{
+    color: #FF7F4F;
+    font-size: 0.6vw;
+    margin-left: 5vw;
+}
+
 
 /* Mobile View */
 @media only screen and (max-width: 1200px) {
