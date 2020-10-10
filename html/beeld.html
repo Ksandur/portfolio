@@ -32,39 +32,139 @@
         <!--Content-->
         <main>
             <div class="container">
-                <div class="content">
-                    <h1>Beeld &amp; Geluid</h1>
-                    <p>Hallo daar, als ik de inspiratie heb zal ik hier een interessant tekstje neerzetten.</p>
-                    <button type="button">Meer info</button>
+                <div id="animatietitel" class="content">
+                    <h1 style="margin-left: -35%;">Beeld &amp; Geluid</h1>
                 </div>
-                <div class="animatiecontent">
-                    <div class="slidesection">
-                        <video id="slider" autoplay muted loop>
-                            <source src="../vid/animatiebg.mp4">
-                        </video>
+                <div class="slidesection">
+                    <video id="slider" autoplay muted loop>
+                        <source src="../vid/animatiebg.mp4">
+                    </video>
+                </div>
+                <div class="showcase">
+                    <div class="titlearea">
+                        <h1>Mijn werk</h1>
+                        <p>Hier vindt u al mijn werkjes voor Beeld &amp; Geluid op een rij.</p>
+                    </div>
+                    <table class="center" id="showcasetable">
+                        <tr>
+                            <th>
+                                <iframe src="https://www.youtube.com/embed/7q1SYTCB-k8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                <p>Opdracht "Cartoon"</p>
+                            </th>
+                        </tr>
+                    </table>
+                </div>
+                <div class="aboutanimatie">
+                    <h1>Wat is Beeld &amp; Geluid?</h1>
+                    <table class="center">
+                        <tr>
+                            <th>
+                                <video autoplay muted loop>
+                                    <source src="../vid/animatiebg.mp4">
+                                </video>
+                            </th>
+                            <th class="leftth">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,<br> sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<br> Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi <br> ut aliquip ex ea commodo consequat.<br>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum <br> dolore eu fugiat nulla pariatur.<br> Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt<br> mollit anim id est laborum.</p>
+                            </th>
+                        </tr>
+                        <tr>
+                            <th class="rightth">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,<br> sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<br> Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi <br> ut aliquip ex ea commodo consequat.<br>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum <br> dolore eu fugiat nulla pariatur.<br> Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt<br> mollit anim id est laborum.</p>
+                            </th>
+                            <th>
+                                <video autoplay muted loop>
+                                    <source src="../vid/chinoismedia.mp4">
+                                </video>
+                            </th>
+                        </tr>
+                    </table>
+                </div>
+                <div class="footer">
+                    <table class="center">
+                        <tr>
+                            <th class="leftth">
+                                <img src="../img/logo.png" alt="Logo">
+                                <p>&copy; Xander Lemmens 2020</p>
+                            </th>
+                            <th class="leftth">
+                                <h2>Vakken</h2>
+                                <a href="animatie.html">Animatie</a><br>
+                                <a href="beeld.html">Beeld &amp; Geluid</a><br>
+                                <a href="grafische.html">Grafische Vormgeving</a><br>
+                                <a href="webdesign.html">WebDesign</a><br>
+                                <a href="scripten.html">Scripten</a><br>
+                            </th>
+                            <th class="leftth">
+                                <h2>Vrij Werk</h2>
+                                <a href="vrijwerk.html#ksandur">Ksandur</a><br>
+                                <a href="vrijwerk.html#ksandurplus">KsandurPlus</a><br>
+                                <a href="vrijwerk.html#discord">Discord</a><br>
+                                <a href="vrijwerk.html#webdesign">Webdesign</a><br>
+                                <a href="vrijwerk.html#scripten">Scripten</a><br>
+                            </th>
+                        </tr>
+                    </table>
+                </div>
+                <div id="myModal" class="modal">
+                    <div class="modal-content">
+                        <span class="close">&times;</span>
+                        <h1>Mijn werk</h1>+
                     </div>
                 </div>
             </div>
         </main>
     </div>
 </body>
-    <style>
-        body {
-            background-color: rgba(0,0,0,0.6);
-            background-image: url("../img/bgbg.jpg");
-            background-attachment: fixed;
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: cover;
+<style>
+    body {
+        background-color: rgba(0, 0, 0, 0.6);
+        background-image: url("../img/aebg.jpg");
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .animatiewrapper {
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+        z-index: 10;
+        background-color: rgba(0, 0, 0, 0.4);
+    }
+    .content{
+        top: 13%;
+        left: 41.5%;
+    }
+    .slidesection{
+        position: relative;
+        margin-top: -6%;
+        width: 100%;
+        height: 50vh;
+    }
+</style>
+<script>
+    var modal = document.getElementById("myModal");
+
+    var btn = document.getElementById("myBtn");
+
+    var span = document.getElementsByClassName("close")[0];
+
+    btn.onclick = function() {
+        modal.style.display = "block";
+    }
+
+    span.onclick = function() {
+        modal.style.display = "none";
+    }
+
+    window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
         }
-        .animatiewrapper {
-            position: fixed;
-            width: 100%;
-            height: 100%;
-            left: 0;
-            top: 0;
-            z-index: 10;
-            background-color: rgba(0,0,0,0.4);
-        }
-    </style>
+    }
+</script>
+
 </html>

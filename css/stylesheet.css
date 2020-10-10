@@ -6,21 +6,21 @@
     is strictly prohibited.
     These files are not for commercial usage.
 */
-html{
+html {
     scroll-behavior: smooth;
 }
 
-body{
+body {
     margin: 0;
     font-family: 'Raleway', sans-serif;
 }
 
 /*Navigation Bar*/
-ul{
+ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    background-color: #111;
+    background-color: #FFF;
     text-align: center;
     position: fixed;
     top: 0;
@@ -28,15 +28,15 @@ ul{
     z-index: 420;
 }
 
-ul:hover{
+ul:hover {
     opacity: 1;
 }
 
-li{
+li {
     display: inline-block;
 }
 
-li a{
+li a {
     display: inline-block;
     color: #808080;
     text-align: center;
@@ -45,20 +45,20 @@ li a{
     transition 0.5s;
 }
 
-li a:hover{
-    color: #FFFFFF;
+li a:hover {
+    color: #FFCBA4;
 }
 
-.active{
-    color: #FFFFFF;
+.active {
+    color: #FF7F4F;
 }
 
-.active:hover{
-    color: #FFFFFF;
+.active:hover {
+    color: #FF7F4F;
 }
 
-ul li ul{
-    background: #111;
+ul li ul {
+    background: #FFF;
     visibility: hidden;
     opacity: 0;
     min-width: 5rem;
@@ -70,13 +70,13 @@ ul li ul{
 }
 
 ul li:hover > ul,
-ul li ul:hover{
+ul li ul:hover {
     visibility: visible;
     opacity: 1;
     display: block;
 }
 
-ul li ul li{
+ul li ul li {
     clear: both;
     width: 100%;
 }
@@ -244,6 +244,15 @@ table.center{
     padding: 0;
 }
 
+.footer img {
+    width: 4vw;
+    text-align: right;
+}
+
+.footer img:hover {
+    width: 4vw;
+}
+
 .footer {
     background-color: #f0f0f0;
     color: #212121;
@@ -251,13 +260,26 @@ table.center{
     font-size: 0.5vw;
 }
 
-table img{
+.footer a {
+    text-decoration: none;
+    color: #FFCBA4;
+}
+
+.footer h2 {
+    margin-top: -1vw;
+}
+
+.footer a:hover {
+    color: #FF7F4F;
+}
+
+table img {
     transition: 0.5s;
     width: 20vw;
     height: auto;
 }
 
-table img:hover{
+table img:hover {
     transition: 0.5s;
     width: 21vw;
     height: auto;
@@ -267,108 +289,27 @@ table img:hover{
     color: #FF7F4F;
 }
 
-.mildpeach{
+.mildpeach {
     color: #FFCBA4;
 }
 
+iframe {
+    width: 35vw;
+    height: 19vw;
+}
+
 /* Mobile View */
-@media only screen and (max-width: 1200px){
-    .indexleft, .indexright{
-        left: 0;
-        right: 0;
-        height: 50%;
-    }
-    .indexleft{
-        top: 10%;
-    }
-    .indexlimage img{
-        z-index: 100;
-    }
-    .indexright{
-        top: 50%;
-        bottom: 0;
-        z-index: 0;
-    }
-    .indexright h2, h3, p{
-        color: #FFFFFF;
-    }
-    .indexsplit{
-        width: 100%;
-    }
-    .indexlimage img{
-        width: 40vw;
-        border-radius: 50%;
-        cursor: default;
-    }
-    .indexleft h1{
-        font-size: 10vw;
-        font-family: 'Source Code Pro', monospace;
-    }
-
-    .indexleft h3{
-        font-size: 4vw;
-    }
-
-    .indexleft p{
-        visibility: hidden;
-    }
+@media only screen and (max-width: 1200px) {
     
-    .projectheading{
-        margin-top: 70vw;
-    }
-    
-    .indexprojects img{
-        width: 50vw;
-        border-radius: 2%;
-        transition: 0.5s;
-        cursor: pointer;
-    }
-    .projectheading h2{
-        margin-top: -50vw;
-        font-size: 10vw;
-    }
-
-    .projectheading p{
-        margin-top: -0.4vw;
-        margin-bottom: 2.2vw;
-        font-size: 6vw;
-        opacity: 0.8;
-    }
-    .indexprojects h3{
-        visibility: hidden;
-    }
-
-    .indexprojects p{
-        visibility: hidden;
-    }
-
-    .indexprojects a{
-        margin-top: 40vw;
-        font-size: 4vw;
-        text-decoration: none;
-        color: #b8e8ff;
-        transition: 0.5s;
-    }
-    
-    .indexprojects img{
-        visibility: hidden;
-        height: 0vw;
-    }
-
-.   indexprojects a:hover{
-        letter-spacing: 0.1vw;
-        transition: 0.5s;
-    }
-    
-    .content h1{
+    .content h1 {
         font-size: 15vw;
     }
     
-    .content p{
+    .content p {
         font-size: 5vw;
     }
     
-    .content{
+    .content {
         z-index:1;
         position: absolute;
         top: 40%;
@@ -376,7 +317,88 @@ table img:hover{
         text-align: center;
         color: white;
     }
-    button{
+    .button {
         font-size: 6vw;
+    }
+    
+    .showcase h1 {
+        font-size:  10vw;
+    }
+    
+    .showcase p {
+        margin-top: -8vw;
+        font-size: 5vw;
+    }
+    
+    #vakkentable th{
+        display: block;
+    }
+    
+    table img {
+        transition: 0.5s;
+        width: 60vw;
+        height: auto;
+    }
+
+    table img:hover {
+        transition: 0.5s;
+        width: 21vw;
+        height: auto;
+    }
+    
+    .aboutanimatie h1 {
+        font-size: 10vw;
+    }
+    
+    .aboutanimatie th {
+        display: block;
+    }
+    
+    .aboutanimatie video {
+        width: 75vw;
+    }
+    
+    .aboutanimatie p {
+        font-size: 3.5vw;
+        margin-left: 10vw;
+    }
+    
+    .footer th {
+        display: block;
+        margin-bottom: 5vw;
+    }
+    
+    .footer img {
+        visibility: hidden;
+    }
+    
+    .footer p {
+        font-size: 5vw;
+    }
+    
+    .footer h2 {
+        font-size: 10vw;
+        margin-bottom: -0.4vw;
+    }
+    
+    .footer a {
+        font-size: 5vw;
+    }
+    
+    .showcase th {
+        display: block;
+    }
+    
+    #animatietitel {
+        margin-top: 10%;
+        margin-left: -20%;
+    }
+    
+    #showcasetable p {
+        margin-top: 2vw;
+    }
+    
+    .rightth {
+        margin-right: 10vw;
     }
 }
