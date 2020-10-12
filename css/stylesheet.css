@@ -202,9 +202,14 @@ table.center{
     text-align: center;
 }
 
-.showcase h1 {
+.showcase h1{
+    margin-top: -1vw;
     padding: 2vw;
     font-size: 1.5vw;
+}
+
+.titlearea{
+    padding: 2vw;
 }
 
 .titlearea p{
@@ -389,6 +394,24 @@ table img:hover {
         display: block;
     }
     
+    .aboutanimatiewhite p{
+        text-align: left;
+    }
+    
+    .aboutanimatiewhite h1 {
+        font-size: 10vw;
+    }
+    
+    .aboutanimatiewhite th {
+        display: block;
+    }
+    
+    .aboutanimatiewhite p {
+        margin-left: 0;
+        margin-right: 0;
+        font-size: 3.5vw;
+    }
+    
     .aboutanimatie video {
         width: 75vw;
     }
@@ -435,5 +458,9 @@ table img:hover {
     
     .rightth {
         margin-right: 10vw;
+    }
+    
+    .titlearea{
+        padding: 7vw;
     }
 }
