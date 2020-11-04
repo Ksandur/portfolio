@@ -13,6 +13,7 @@ html {
 body {
     margin: 0;
     font-family: 'Raleway', sans-serif;
+    overflow-x: hidden;
 }
 
 /*Navigation Bar*/
@@ -251,12 +252,12 @@ table.center{
 }
 
 .footer img {
-    width: 8vw;
+    width: 10vw;
     text-align: right;
 }
 
 .footer img:hover {
-    width: 8vw;
+    width: 10vw;
 }
 
 .footer {
@@ -268,7 +269,7 @@ table.center{
 
 .footer a {
     text-decoration: none;
-    color: #FFCBA4;
+    color: #FF7F4F;
 }
 
 .footer h2 {
@@ -277,7 +278,7 @@ table.center{
 }
 
 .footer a:hover {
-    color: #FF7F4F;
+    color: #000000;
 }
 
 table img {
@@ -337,7 +338,82 @@ table img:hover {
     margin-left: 5vw;
 }
 
+#vakkentable {
+    display: flex;
+    justify-content: center;
+    flex-flow: row nowrap;
+    flex: 0 0 100%;
+}
 
+#vakkentable a{
+    color: #FF7F4F;
+    text-align: center;
+    text-decoration: none;
+    margin-bottom: 5vw;
+}
+
+#vakkentable h1{
+    font-size: 1vw;
+    padding-bottom: 15vw;
+    padding-top: 15vw;
+    width: 11vw;
+    height: 10%;
+    background-color: red;
+    transition: 0.5s;
+    text-shadow: 3px 3px 14px rgba(0, 0, 0, 0.5);
+}
+
+#vakkentable h1:hover{
+    transition: 0.5s;
+    width: 16vw;
+}
+
+#tb1 {
+    background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .2)), url(../img/BG/aebg.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+#tb2 {
+    background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .2)), url(../img/BG/bgbg.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+#tb3 {
+    background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .2)), url(../img/BG/grafische.PNG);
+    background-size: cover;
+    background-position: center;
+}
+
+#tb4 {
+    background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .2)), url(../img/BG/webdesign.png);
+    background-size: cover;
+    background-position: center;
+}
+
+#tb5 {
+    background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .2)), url(../img/BG/scripten.png);
+    background-size: cover;
+    background-position: center;
+}
+
+#tb6 {
+   background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .4)), url(../img/BG/banner.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.abtitem {
+    display: flex;
+    justify-content: center;
+    background-position: center;
+}
+
+.abtitem p {
+    margin-top: 2.5vw;
+    text-align: left;
+}
 /* Mobile View */
 @media only screen and (max-width: 1200px) {
     
@@ -370,8 +446,8 @@ table img:hover {
         font-size: 5vw;
     }
     
-    #vakkentable th{
-        display: block;
+    #vakkentable{
+        display: flex;
     }
     
     table img {
