@@ -419,6 +419,11 @@ table img:hover {
     color: #000000;
 }
 
+.subfooter {
+    text-align: center; 
+    font-size: 0.4vw;
+}
+
 /* Mobile View */
 @media only screen and (max-width: 1200px) {
     
@@ -433,7 +438,7 @@ table img:hover {
     .content {
         z-index:1;
         position: absolute;
-        top: 40%;
+        top: 30%;
         left: 0;
         text-align: center;
         color: white;
@@ -502,28 +507,6 @@ table img:hover {
         margin-left: 10vw;
     }
     
-    .footer th {
-        display: block;
-        margin-bottom: 5vw;
-    }
-    
-    .footer img {
-        visibility: hidden;
-    }
-    
-    .footer p {
-        font-size: 5vw;
-    }
-    
-    .footer h2 {
-        font-size: 10vw;
-        margin-bottom: -0.4vw;
-    }
-    
-    .footer a {
-        font-size: 5vw;
-    }
-    
     .showcase th {
         display: block;
     }
@@ -543,5 +526,95 @@ table img:hover {
     
     .titlearea{
         padding: 7vw;
+    }
+    
+    .abtitem {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-position: center;
+        flex-direction: column;
+    }
+    
+    .abtitem img{
+        width: 75vw;
+    }
+
+    .abtitem p {
+        margin-top: 2.5vw;
+        text-align: left;
+    }
+    
+    #vakkentable {
+        display: flex;
+        justify-content: center;
+        flex-flow: row nowrap;
+        flex-direction: column;
+        flex: 0 0 100%;
+    }
+
+    #vakkentable a {
+        color: #FF7F4F;
+        text-align: center;
+        text-decoration: none;
+        margin-bottom: 5vw;
+    }
+
+    #vakkentable h1 {
+        font-size: 10vw;
+        padding-bottom: 15vw;
+        padding-top: 15vw;
+        padding-left: 4%;
+        padding-right: 4%;
+        width: 100%;
+        height: 5%;
+        background-color: red;
+        transition: 0.5s;
+        text-shadow: 3px 3px 14px rgba(0, 0, 0, 0.5);
+        margin-bottom: -4vw;
+    }
+
+    #vakkentable h1:hover {
+        transition: 0.5s;
+        width: 16vw;
+    }
+    
+    .footerbox {
+        display: flex;
+        justify-content: center;
+        flex-direction: column-reverse;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer img {
+        margin-top: 10vw;
+        width: 75vw;
+        margin-bottom: 2vw;
+    }
+    
+    .footer {
+        background-color: #f0f0f0;
+        color: #212121;
+        padding: 1vw;
+        font-size: 5vw;
+    }
+    
+    .footer a {
+        text-decoration: none;
+        color: #FF7F4F;
+    }
+    
+    .footer h2 {
+        font-size: 8vw;
+        margin-bottom: -0.5vw;
+    }
+    
+    .footer a:hover {
+        color: #000000;
+    }
+    
+    .subfooter {
+        font-size: 2vw;
     }
 }
