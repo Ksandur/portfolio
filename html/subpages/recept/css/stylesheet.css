@@ -1,6 +1,7 @@
 /* Small reset*/
 * {
   margin: 0;
+  box-sizing: border-box;
 }
 
 body {
@@ -148,18 +149,94 @@ a {
   color: #212121;
 }
 
-::-webkit-scrollbar {
-  width: 10px;
-}
+@media only screen and (max-width: 1200px) {
+  /* My dank standard vals for mobile */
+  h1 {
+    font-size: 40vw;
+  }
 
-::-webkit-scrollbar-track {
-  background: #f1f1f1;
-}
+  h2 {
+    font-size: 10vw;
+    margin-bottom: 1vw;
+    text-align: center;
+  }
 
-::-webkit-scrollbar-thumb {
-  background: #8fa832;
-}
+  p {
+    font-size: 4vw;
+    margin-bottom: 2vw;
+    white-space: normal;
+  }
 
-::-webkit-scrollbar-thumb:hover {
-  background: #555;
+  a {
+    vertical-align: middle;
+  }
+
+  /* Navbar */
+  .nav ul {
+    width: 100%;
+  }
+
+  .nav li a {
+    display: block;
+    color: #212121;
+    text-align: center;
+    padding: 3vw 3vw;
+    text-decoration: none;
+    font-size: 4vw;
+  }
+
+  /* CSS */
+  .precipe {
+    height: 48vw;
+  }
+
+  .precipe h1 {
+    padding-top: 11.5vw;
+    font-size: 11vw;
+  }
+
+  .recipe {
+    padding: 0vw;
+    flex-direction: column;
+  }
+
+  .ingredients {
+    white-space: nowrap;
+    border-radius: 0vw;
+    position: static;
+    margin-bottom: 5vw;
+  }
+
+  .ingredients h2 {
+    padding-top: 5vw;
+    padding-bottom: 5vw;
+  }
+
+  .stap h1 {
+    width: 15vw;
+    height: 15vw;
+    line-height: 15vw;
+    font-size: 6vw;
+    margin-bottom: 5vw;
+    margin-top: 5vw;
+  }
+
+  .stappenplan img {
+    width: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2.5vw;
+    border-radius: 0vw;
+  }
+
+  .footer {
+    padding: 3vw;
+    clear: both;
+  }
+
+  .footer h1 {
+    font-size: 5vw;
+    text-align: center;
+  }
 }
