@@ -494,8 +494,16 @@ table img:hover {
   background: #555;
 }
 
+#internettitel {
+  margin-left: -50%;
+}
+
 /* Mobile View */
 @media only screen and (max-width: 1200px) {
+  * {
+    box-sizing: border-box;
+  }
+
   .content h1 {
     font-size: 15vw;
   }
@@ -587,6 +595,11 @@ table img:hover {
 
   #showcasetable p {
     margin-top: 2vw;
+  }
+
+  #internettitel {
+    font-size: 8vw;
+    margin-left: -75%;
   }
 
   .rightth {
