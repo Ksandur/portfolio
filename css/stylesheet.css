@@ -498,6 +498,10 @@ table img:hover {
   margin-left: -50%;
 }
 
+#grafititel {
+  margin-left: -12%;
+}
+
 /* Mobile View */
 @media only screen and (max-width: 1200px) {
   * {
