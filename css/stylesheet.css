@@ -6,6 +6,10 @@
     is strictly prohibited.
     These files are not for commercial usage.
 */
+* {
+  box-sizing: border-box;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -358,7 +362,7 @@ table img:hover {
   font-size: 1vw;
   padding-bottom: 15vw;
   padding-top: 15vw;
-  width: 11vw;
+  width: 15vw;
   height: 10%;
   background-color: red;
   transition: 0.5s;
@@ -367,7 +371,7 @@ table img:hover {
 
 #vakkentable h1:hover {
   transition: 0.5s;
-  width: 16vw;
+  width: 17vw;
 }
 
 #tb1 {
