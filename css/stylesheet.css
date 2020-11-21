@@ -7,7 +7,7 @@
     These files are not for commercial usage.
 */
 html {
-  scroll-behavior: smooth;  
+  scroll-behavior: smooth;
 }
 
 body {
@@ -472,6 +472,22 @@ table img:hover {
 .subfooter {
   text-align: center;
   font-size: 0.4vw;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #ff7f4f;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
 }
 
 /* Mobile View */
