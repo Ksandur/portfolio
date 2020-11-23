@@ -271,6 +271,11 @@ table img:hover {
   transition: 0.5s;
 }
 
+#showcaseitems iframe {
+  width: 35vw;
+  height: 20vw;
+}
+
 .aboutanimatie {
   background-color: #ff7f4f;
   color: white;
@@ -288,6 +293,7 @@ table img:hover {
 
 .animatiebox p {
   margin-top: 2.5vw;
+  font-size: 1vw;
 }
 
 .item1 {
