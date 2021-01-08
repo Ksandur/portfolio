@@ -1,0 +1,67 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;1,700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+body {
+  background-image: url("../img/bigbg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#textEen {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  text-shadow: 0.25vw 0.25vw 0.27vw rgba(0, 0, 0, 1);
+  opacity: 0.9;
+  font-size: 8vw;
+  text-align: center;
+  margin-top: 20%;
+  position: sticky;
+  z-index: 1;
+  color: white;
+}
+
+#textTwee {
+  font-family: "Montserrat", sans-serif;
+  color: orange;
+  text-shadow: 0.15vw 0.15vw 0.17vw rgba(0, 0, 0, 1);
+  font-size: 0.95vw;
+  text-transform: uppercase;
+  word-spacing: 0.5vw;
+  letter-spacing: 0.75vw;
+  text-align: center;
+  margin-top: -1vw;
+  margin-left: 2vw;
+  z-index: 20;
+  position: sticky;
+  font-weight: 700;
+}
+
+#textDrie {
+  color: orange;
+  font-size: 2vw;
+  margin-left: -6vw;
+  margin-top: -58vw;
+  transform: rotate(-80deg);
+  text-shadow: 0.25vw 0.25vw 0.27vw rgba(0, 0, 0, 1);
+  z-index: 3;
+  position: sticky;
+}
+
+#polaroid {
+  width: 20vw;
+  transform: rotate(9deg);
+  margin-top: 40vw;
+  margin-left: 40vw;
+  z-index: 0;
+  opacity: 0.5;
+}
+
+.japanLogo {
+  position: sticky;
+  margin-top: -4vw;
+}
