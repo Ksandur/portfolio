@@ -1,0 +1,88 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+#wrapper {
+  justify-content: center;
+  width: 50%; /* specify a width! */
+  margin: 0 auto; /* center */
+}
+
+h1 {
+  text-align: left;
+  padding: 1vw;
+  color: #111111;
+  font-size: 5vw;
+  display: block;
+}
+
+p {
+  font-size: 1vw;
+  text-align: left;
+  padding: 1vw;
+  margin-top: -2.8vw;
+  margin-left: 0.2vw;
+}
+
+#orange {
+  color: orange;
+}
+
+.images img {
+  width: 10vw;
+  height: 10vw;
+  text-align: center;
+  margin: 0.5vw;
+  border: orange 0.15vw solid;
+  border-radius: 0.25vw;
+}
+
+.image {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.image a {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 0.5vw;
+  text-decoration: none;
+  background-color: orange;
+  color: white;
+  opacity: 0;
+  transition: 0.25s;
+  font-size: 1vw;
+  border-radius: 0.25vw;
+}
+
+.image a:hover {
+  opacity: 1;
+  transition: 0.5s;
+}
+
+.row {
+  display: flex;
+}
+
+.footer {
+  position: static;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #111111;
+  color: orange;
+  text-align: center;
+}
+
+.footer h2 {
+  padding: 1vw;
+  font-size: 1vw;
+}
