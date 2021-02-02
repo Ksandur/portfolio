@@ -1,0 +1,316 @@
+@font-face {
+  font-family: "Stretch Pro";
+  src: url("StretchProRegular.woff2") format("woff2"),
+    url("StretchProRegular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+.parallax {
+  height: 500px;
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+  -webkit-perspective: 300px;
+  perspective: 300px;
+}
+
+.parallax__group {
+  position: relative;
+  height: 500px; 
+  height: 100vh;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+
+.parallax__layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.parallax__layer--fore {
+  -webkit-transform: translateZ(90px) scale(.7);
+  transform: translateZ(90px) scale(.7);
+  z-index: 1;
+}
+
+.parallax__layer--base {
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  z-index: 4;
+}
+
+.parallax__layer--back {
+  -webkit-transform: translateZ(-300px) scale(2);
+  transform: translateZ(-300px) scale(2);
+  z-index: 3;
+}
+
+.parallax__layer--deep {
+  -webkit-transform: translateZ(-600px) scale(3);
+  transform: translateZ(-600px) scale(3);
+  z-index: 2;
+}
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+body, html {
+  overflow: hidden;
+}
+
+body {
+  font: 100% / 1.5 Arial;
+  background: url(../img/elon-large.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+* {
+  margin:0;
+  padding:0;
+}
+
+.parallax {
+  font-size: 200%;
+}
+
+.title {
+  text-align: center;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  font-size: 2.5vw;
+  font-style: oblique;
+  text-transform: uppercase;
+  font-family: "Stretch Pro";
+  color: #005288;
+  text-shadow: 0px 5px 12px rgba(0,0,0,0.65);
+}
+
+.blanc {
+  color:#fff;
+}
+
+.image img{
+  text-align: center;
+  position: absolute;
+  left: 15%;
+  bottom: -25%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  width: 25vw;
+}
+
+.title img{
+  width: 25vw;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  -webkit-filter: drop-shadow(1vw 1vw 1vw #000);
+  filter: drop-shadow(1vw 1vw 1vw #000); 
+}
+
+#group2 p {
+  font-family: "Stretch Pro";
+  color: white;
+  font-size: 0.5vw;
+  transform: translate(25%, 420%);
+  text-shadow: 0px 5px 12px rgba(0,0,0,0.65);
+}
+
+#group4 p {
+  font-family: "Stretch Pro";
+  color: white;
+  font-size: 0.5vw;
+  transform: translate(35%, 430%);
+  text-shadow: 0px 5px 12px rgba(0,0,0,0.65);
+}
+
+#group5 p {
+  font-family: "Stretch Pro";
+  color: white;
+  font-size: 0.5vw;
+  transform: translate(35%, 800%);
+  text-shadow: 0px 5px 12px rgba(0,0,0,0.65);
+}
+
+#group6 p {
+  font-family: "Stretch Pro";
+  color: white;
+  font-size: 0.5vw;
+  transform: translate(35%, 500%);
+  text-shadow: 0px 5px 12px rgba(0,0,0,0.65);
+}
+
+#group4 .title{
+  margin-top: -4vw;
+}
+
+#group5 img {
+  width: 100vh;
+  margin-top: 55vw;
+  margin-left: -50vw;
+}
+
+video {
+  object-fit: cover;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+#group1 {
+  z-index: 5;
+}
+
+#group1 .parallax__layer--base {
+  background: rgba(0,0,0,0.5);
+  color: white;
+}
+
+#group2 {
+  z-index: 3;
+}
+
+#group3 {
+  z-index: 4;
+}
+
+#group3 .parallax__layer--base {
+  background: url(../img/elon_with_rocket.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#group4 {
+  z-index: 2;
+}
+
+#group4 .parallax__layer--back img{
+  width: 100%;
+}
+
+#group4 .parallax__layer--deep {
+  background: rgba(0, 82, 136, 0.45);
+}
+
+#group5 {
+  z-index: 3;
+}
+
+#group5 .parallax__layer--base {
+  background: url(../img/solarroof.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#group6 {
+  z-index: 2;
+}
+
+#group6 .parallax__layer--back {
+  background: url(../img/musk_and_grimes.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#group7 {
+  z-index: 3;
+}
+
+#group7 .parallax__layer--base {
+  background: url(../img/musk_at_work.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+  
+.wrap {
+  height: 100%;
+  width: 100%;
+  text-align: center;
+}
+  
+.wrap img {
+  margin: 0px 0 0 -40px;
+  line-height: 60px;
+  position: absolute;
+  left: 50%;
+  bottom: 0.5vw;
+  width: 2vw;
+}
+  
+.bounce {
+  animation-iteration-count: infinite;
+  animation-duration: 1.5s;
+  animation: bounce 3.6s ease infinite;
+  transform-origin: 50% 50%;
+}
+  
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+  5.55556% {
+    transform: translateY(0);
+  }
+  11.11111% {
+    transform: translateY(0);
+  }
+  22.22222% {
+    transform: translateY(-15px);
+  }
+  27.77778% {
+    transform: translateY(0);
+  }
+  33.33333% {
+    transform: translateY(-15px);
+  }
+  44.44444% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+ 
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: rgba(0, 0, 0, 0);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: +1;
+  border-bottom: rgba(255, 255, 255, 1) solid 0.01vw;
+  opacity: 0.8;
+}
+  
+li {
+  float: left;
+}
+  
+li a {
+  display: block;
+  color: #fff;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  opacity: 0.8;
+}
+  
+li a:hover {
+  background-color: #111;
+}
