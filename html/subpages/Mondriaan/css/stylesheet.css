@@ -1,0 +1,145 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  width: 20vw;
+  padding: 1.5vw;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#vak_parent {
+  margin: auto;
+  height: 40vw;
+  width: 40vw;
+  display: grid;
+  padding: 0.35vw;
+  grid-gap: 0.35vw;
+  background-color: black;
+}
+
+.item {
+  grid-template-columns: repeat(12);
+  column-width: 4vw;
+}
+
+.white {
+  background-color: white;
+}
+
+.red {
+  background-color: red;
+}
+
+.black {
+  background-color: black;
+}
+
+.blue {
+  background-color: blue;
+}
+
+.yellow {
+  background-color: yellow;
+}
+
+#vak_een {
+  grid-column: 1/3;
+  grid-row: 1/7;
+}
+
+#vak_twee {
+  grid-column: 3/6;
+  grid-row: 1/5;
+}
+
+#vak_drie {
+  grid-column: 6/10;
+  grid-row: 1/3;
+}
+
+#vak_vier {
+  grid-column: 10/12;
+  grid-row: 1/2;
+}
+
+#vak_vijf {
+  grid-column: 6/8;
+  grid-row: 3/5;
+}
+
+#vak_zes {
+  grid-column: 8/10;
+  grid-row: 3/4;
+}
+
+#vak_zeven {
+  grid-column: 10/12;
+  grid-row: 2/4;
+}
+
+#vak_acht {
+  grid-column: 12/13;
+  grid-row: 2/5;
+}
+
+#vak_negen {
+  grid-column: 10/12;
+  grid-row: 4/5;
+}
+
+#vak_tien {
+  grid-column: 3/5;
+  grid-row: 5/7;
+}
+
+#vak_elf {
+  grid-column: 5/11;
+  grid-row: 5/9;
+}
+
+#vak_twaalf {
+  grid-column: 11/13;
+  grid-row: 5/13;
+}
+
+#vak_dertien {
+  grid-column: 1/3;
+  grid-row: 7/13;
+}
+
+#vak_veertien {
+  grid-column: 2/5;
+  grid-row: 7/10;
+}
+
+#vak_vijftien {
+  grid-column: 5/9;
+  grid-row: 9/13;
+}
+
+#vak_zestien {
+  grid-column: 9/11;
+  grid-row: 9/13;
+}
+
+#vak_zeventien {
+  grid-column: 2/4;
+  grid-row: 10/12;
+}
+
+#vak_achttien {
+  grid-column: 4/5;
+  grid-row: 10/12;
+}
+
+#vak_negentien {
+  grid-column: 2/5;
+  grid-row: 12/13;
+}
