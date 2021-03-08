@@ -51,15 +51,15 @@ li a {
 }
 
 li a:hover {
-  color: #ffcba4;
+  color: #ffd45e;
 }
 
 .active {
-  color: #ff7f4f;
+  color: #ffbb00;
 }
 
 .active:hover {
-  color: #ff7f4f;
+  color: #ffbb00;
 }
 
 ul li ul {
@@ -176,8 +176,8 @@ img {
   border: 0.1vw;
   border-radius: 0.5vw;
   border-style: solid;
-  border-color: #ff7f4f;
-  color: #ff7f4f;
+  border-color: #ffbb00;
+  color: #ffbb00;
   background-color: rgba(0, 0, 0, 0);
   padding: 15px 32px;
   text-align: center;
@@ -225,11 +225,11 @@ table img:hover {
 }
 
 .peach {
-  color: #ff7f4f;
+  color: #ffbb00;
 }
 
 .mildpeach {
-  color: #ffcba4;
+  color: #ffd45e;
 }
 
 .showcase {
@@ -267,7 +267,7 @@ table img:hover {
 }
 
 #showcaseitems img:hover {
-  width: 26vw;
+  opacity: 0.8;
   transition: 0.5s;
 }
 
@@ -277,10 +277,11 @@ table img:hover {
 }
 
 .aboutanimatie {
-  background-color: #ff7f4f;
+  background-color: #ffbb00;
   color: white;
   text-align: center;
   padding: 1vw;
+  min-height: 28vw;
 }
 
 .aboutanimatie video {
@@ -326,7 +327,7 @@ table img:hover {
 #vrijwerktable p {
   font-size: 0.6vw;
   margin-left: 5vw;
-  color: #ff7f4f;
+  color: #ffbb00;
 }
 
 .aboutanimatiewhite {
@@ -340,12 +341,12 @@ table img:hover {
 }
 
 .aboutanimatiewhite h1 {
-  color: #ff7f4f;
+  color: #ffbb00;
   font-size: 1.5vw;
 }
 
 .aboutanimatiewhite p {
-  color: #ff7f4f;
+  color: #ffbb00;
   font-size: 0.6vw;
   margin-left: 5vw;
 }
@@ -358,7 +359,7 @@ table img:hover {
 }
 
 #vakkentable a {
-  color: #ff7f4f;
+  color: #ffbb00;
   text-align: center;
   text-decoration: none;
   margin-bottom: 5vw;
@@ -377,7 +378,7 @@ table img:hover {
 
 #vakkentable h1:hover {
   transition: 0.5s;
-  width: 17vw;
+  opacity: 0.8;
 }
 
 #tb1 {
@@ -417,7 +418,7 @@ table img:hover {
 
 #tb6 {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.4)),
-    url(../img/BG/banner.png);
+    url(../img/BG/banner.jpg);
   background-size: cover;
   background-position: center;
 }
@@ -464,7 +465,7 @@ table img:hover {
 
 .footer a {
   text-decoration: none;
-  color: #ff7f4f;
+  color: #ffbb00;
   padding-left: 2vw;
   padding-right: 2vw;
 }
@@ -493,7 +494,7 @@ table img:hover {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #ff7f4f;
+  background: #ffbb00;
 }
 
 ::-webkit-scrollbar-thumb:hover {
@@ -642,7 +643,7 @@ table img:hover {
   }
 
   #vakkentable a {
-    color: #ff7f4f;
+    color: #ffbb00;
     text-align: center;
     text-decoration: none;
     margin-bottom: 5vw;
@@ -705,7 +706,7 @@ table img:hover {
 
   .footer a {
     text-decoration: none;
-    color: #ff7f4f;
+    color: #ffbb00;
   }
 
   .footer h2 {
